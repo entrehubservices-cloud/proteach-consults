@@ -13,6 +13,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  const heroBgVideo = document.getElementById('heroBgVideo');
+  if (heroBgVideo) {
+    heroBgVideo.muted = true;
+    heroBgVideo.play().catch(() => {});
+  }
+
   /* --------------------------------------------------------------------------
      1. SPLIT-TEXT TYPOGRAPHY PREPARATION
      -------------------------------------------------------------------------- */
