@@ -1776,13 +1776,13 @@ body:has(dialog[open]) {
 
 
 /* ==========================================================================
-   HERO VIDEO BACKGROUND & 90% OPACITY DARK OVERLAY
+   HERO VIDEO BACKGROUND & 100% WHITE OVERLAY
    ========================================================================== */
 .hero-section.hero-has-video {
   position: relative;
   overflow: hidden;
-  background-color: #111111;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: var(--text-main);
 }
 
 .hero-video-bg {
@@ -1804,8 +1804,8 @@ body:has(dialog[open]) {
 .hero-video-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(17, 17, 17, 0.90);
-  backdrop-filter: blur(2px);
+  background: rgba(255, 255, 255, 1);
+  opacity: 1;
 }
 
 .hero-has-video .hero-grid {
@@ -1813,46 +1813,42 @@ body:has(dialog[open]) {
   z-index: 2;
 }
 
-.hero-has-video .hero-pill-badge {
-  background: rgba(243, 112, 33, 0.16);
-  border-color: rgba(243, 112, 33, 0.42);
-  color: #ffb88c;
-}
-
 .hero-has-video .hero-title {
-  color: #ffffff;
+  color: var(--text-main);
 }
 
 .hero-has-video .hero-subtext {
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--text-body);
 }
 
 .hero-has-video .hero-subtext strong {
-  color: #ffffff;
+  color: var(--text-main);
 }
 
 .hero-has-video .hero-trust-row {
-  border-block-start-color: rgba(255, 255, 255, 0.14);
+  border-block-start-color: var(--border-color);
 }
 
 .hero-has-video .trust-meta strong {
-  color: #ffffff;
+  color: var(--text-main);
 }
 
 .hero-has-video .trust-meta p {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--text-body);
 }
 
-.hero-has-video .btn-outline-pill {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.24);
-  color: #ffffff;
+.hero-has-video .btn-ghost-light,
+.hero-has-video .btn-reel-pill {
+  background: var(--bg-cultured);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
 }
 
-.hero-has-video .btn-outline-pill:hover {
+.hero-has-video .btn-ghost-light:hover,
+.hero-has-video .btn-reel-pill:hover {
   background: #ffffff;
-  color: #111111;
-  border-color: #ffffff;
+  border-color: var(--brand-orange);
+  color: var(--brand-orange);
 }
 
 .btn-reel-pill {
