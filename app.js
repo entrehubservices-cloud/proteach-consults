@@ -361,35 +361,86 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* --------------------------------------------------------------------------
-     6. PRINCIPAL CONSULTANT (ZENAB ADAM) 3-PORTRAIT SWITCHER
+     6. PRINCIPAL CONSULTANT (ZENAB ADAM) ANIMATED 3-PORTRAIT SLIDER
      -------------------------------------------------------------------------- */
-  const founderFeaturedImg = document.getElementById('founderFeaturedImg');
+  const founderSliderTrack = document.getElementById('founderSliderTrack');
   const founderCaptionTitle = document.getElementById('founderCaptionTitle');
   const founderMainFrame = document.getElementById('founderMainFrame');
-  const founderThumbBtns = document.querySelectorAll('.founder-thumb-btn');
+  const founderThumbBtns = Array.from(document.querySelectorAll('.founder-thumb-btn'));
+  const founderPrevBtn = document.getElementById('founderPrevBtn');
+  const founderNextBtn = document.getElementById('founderNextBtn');
+  const founderDots = Array.from(document.querySelectorAll('#founderSlideDots .f-dot'));
 
-  founderThumbBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      founderThumbBtns.forEach((b) => b.classList.toggle('is-active', b === btn));
-      const newSrc = btn.dataset.founderSrc;
-      const newTitle = btn.dataset.founderTitle;
-      const galleryIdx = btn.dataset.galleryIdx;
+  if (founderSliderTrack) {
+    const founderSlides = Array.from(founderSliderTrack.querySelectorAll('.founder-slide'));
+    let founderIdx = 0;
+    let founderTimer = null;
 
-      if (founderFeaturedImg && newSrc) {
-        founderFeaturedImg.style.opacity = '0.35';
-        setTimeout(() => {
-          founderFeaturedImg.src = newSrc;
-          founderFeaturedImg.style.opacity = '1';
-        }, 120);
+    const goToFounderSlide = (idx) => {
+      if (!founderSlides.length) return;
+      founderIdx = (idx + founderSlides.length) % founderSlides.length;
+      founderSliderTrack.style.transform = `translate3d(-${founderIdx * 100}%, 0, 0)`;
+
+      founderSlides.forEach((s, i) => s.classList.toggle('is-active', i === founderIdx));
+      founderThumbBtns.forEach((b, i) => b.classList.toggle('is-active', i === founderIdx));
+      founderDots.forEach((d, i) => d.classList.toggle('is-active', i === founderIdx));
+
+      const activeSlide = founderSlides[founderIdx];
+      if (founderCaptionTitle && activeSlide?.dataset.caption) {
+        founderCaptionTitle.textContent = activeSlide.dataset.caption;
       }
-      if (founderCaptionTitle && newTitle) {
-        founderCaptionTitle.textContent = newTitle;
+      if (founderMainFrame && activeSlide?.dataset.galleryIdx) {
+        founderMainFrame.dataset.galleryOpen = activeSlide.dataset.galleryIdx;
       }
-      if (founderMainFrame && galleryIdx) {
-        founderMainFrame.dataset.galleryOpen = galleryIdx;
+    };
+
+    const startFounderAutoplay = () => {
+      if (prefersReducedMotion) return;
+      stopFounderAutoplay();
+      founderTimer = setInterval(() => {
+        goToFounderSlide(founderIdx + 1);
+      }, 3600);
+    };
+
+    const stopFounderAutoplay = () => {
+      if (founderTimer) {
+        clearInterval(founderTimer);
+        founderTimer = null;
       }
+    };
+
+    founderThumbBtns.forEach((btn, i) => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToFounderSlide(i);
+        startFounderAutoplay();
+      });
     });
-  });
+
+    if (founderPrevBtn) {
+      founderPrevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToFounderSlide(founderIdx - 1);
+        startFounderAutoplay();
+      });
+    }
+
+    if (founderNextBtn) {
+      founderNextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToFounderSlide(founderIdx + 1);
+        startFounderAutoplay();
+      });
+    }
+
+    if (founderMainFrame) {
+      founderMainFrame.addEventListener('pointerenter', stopFounderAutoplay);
+      founderMainFrame.addEventListener('pointerleave', startFounderAutoplay);
+    }
+
+    goToFounderSlide(0);
+    startFounderAutoplay();
+  }
 
   /* --------------------------------------------------------------------------
      7. ANIMATED SLIDING TESTIMONIALS CAROUSEL

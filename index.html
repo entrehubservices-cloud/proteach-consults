@@ -319,22 +319,63 @@
     <!-- 3B. DEDICATED SEGMENT FOR PRINCIPAL CONSULTANT ZENAB ADAM (Behance NZUAC Editorial Showcase) -->
     <section class="section founder-section" id="founder">
       <div class="container founder-grid">
-        <!-- Left: Interactive 3-Portrait Editorial Gallery of Zenab Adam -->
-        <div class="founder-portraits-col reveal-up">
-          <div class="founder-main-frame curtain-reveal" id="founderMainFrame" data-cursor="VIEW" data-gallery-open="5">
-            <div class="curtain-mask">
-              <img
-                src="assets/images/zenab_1.jpg"
-                onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';"
-                alt="Zenab Adam — Principal Consultant &amp; Founder, Pro Teach Consults"
-                id="founderFeaturedImg"
-                width="520"
-                height="620"
-              />
+        <!-- Left: Animated Sliding 3-Portrait Editorial Carousel of Zenab Adam -->
+        <div class="founder-portraits-col founder-portrait-showcase reveal-up">
+          <div class="founder-main-frame" id="founderMainFrame" data-cursor="VIEW" data-gallery-open="5">
+            <div class="founder-slider-viewport" id="founderSliderViewport" aria-roledescription="carousel" aria-label="Zenab Adam Portrait Slider">
+              <div class="founder-slider-track" id="founderSliderTrack">
+                <!-- Slide 0 -->
+                <div class="founder-slide is-active" data-caption="Zenab Adam — Principal Consultant &amp; Founder" data-gallery-idx="5">
+                  <img
+                    src="assets/images/zenab_1.jpg"
+                    onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';"
+                    alt="Zenab Adam — Principal Consultant &amp; Founder, Pro Teach Consults"
+                    class="founder-featured-img"
+                    width="520"
+                    height="620"
+                  />
+                </div>
+                <!-- Slide 1 -->
+                <div class="founder-slide" data-caption="Zenab Adam — Integrative Life &amp; Communications Coach" data-gallery-idx="6">
+                  <img
+                    src="assets/images/zenab_2.jpg"
+                    onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';"
+                    alt="Zenab Adam — Integrative Life &amp; Communications Coach"
+                    class="founder-featured-img"
+                    width="520"
+                    height="620"
+                  />
+                </div>
+                <!-- Slide 2 -->
+                <div class="founder-slide" data-caption="Zenab Adam — TEDx Speaker &amp; APSI Convener" data-gallery-idx="7">
+                  <img
+                    src="assets/images/zenab_3.jpg"
+                    onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';"
+                    alt="Zenab Adam — TEDx Speaker &amp; APSI Convener"
+                    class="founder-featured-img"
+                    width="520"
+                    height="620"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="founder-frame-caption">
-              <span class="founder-badge-tag">Principal Consultant &amp; CVO</span>
-              <strong id="founderCaptionTitle">Zenab Adam — Studio Portrait</strong>
+
+            <!-- Prev / Next Controls on Portrait Frame -->
+            <div class="founder-slider-arrows">
+              <button type="button" class="founder-arrow-btn" id="founderPrevBtn" aria-label="Previous Portrait">‹</button>
+              <button type="button" class="founder-arrow-btn" id="founderNextBtn" aria-label="Next Portrait">›</button>
+            </div>
+
+            <div class="founder-frame-badge">
+              <div class="founder-badge-top">
+                <span class="founder-badge-kicker">Principal Consultant &amp; CVO</span>
+                <div class="founder-slide-dots" id="founderSlideDots" aria-hidden="true">
+                  <span class="f-dot is-active"></span>
+                  <span class="f-dot"></span>
+                  <span class="f-dot"></span>
+                </div>
+              </div>
+              <strong id="founderCaptionTitle">Zenab Adam — Principal Consultant &amp; Founder</strong>
             </div>
           </div>
 
@@ -343,8 +384,8 @@
             <button
               type="button"
               class="founder-thumb-btn is-active"
+              data-slide-index="0"
               data-portrait-src="assets/images/zenab_1.jpg"
-              data-portrait-fallback="assets/images/zenab_adam_portrait.png"
               data-portrait-caption="Zenab Adam — Principal Consultant &amp; Founder"
               data-gallery-idx="5"
               aria-label="View Portrait 1 of Zenab Adam"
@@ -354,8 +395,8 @@
             <button
               type="button"
               class="founder-thumb-btn"
+              data-slide-index="1"
               data-portrait-src="assets/images/zenab_2.jpg"
-              data-portrait-fallback="assets/images/zenab_adam_portrait.png"
               data-portrait-caption="Zenab Adam — Integrative Life &amp; Communications Coach"
               data-gallery-idx="6"
               aria-label="View Portrait 2 of Zenab Adam"
@@ -365,8 +406,8 @@
             <button
               type="button"
               class="founder-thumb-btn"
+              data-slide-index="2"
               data-portrait-src="assets/images/zenab_3.jpg"
-              data-portrait-fallback="assets/images/zenab_adam_portrait.png"
               data-portrait-caption="Zenab Adam — TEDx Speaker &amp; APSI Convener"
               data-gallery-idx="7"
               aria-label="View Portrait 3 of Zenab Adam"
