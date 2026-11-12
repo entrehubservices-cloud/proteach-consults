@@ -594,10 +594,38 @@ document.addEventListener('DOMContentLoaded', () => {
     consultDialog.showModal();
   };
 
-  ['openModalBtn', 'heroBookBtn', 'ctaBannerBookBtn'].forEach((id) => {
+  ['openModalBtn', 'heroBookBtn', 'ctaBannerBookBtn', 'mobileBookBtn'].forEach((id) => {
     const btn = document.getElementById(id);
     if (btn) btn.addEventListener('click', () => openBookingModal());
   });
+
+  /* --------------------------------------------------------------------------
+     8B. MOBILE & TABLET NAVIGATION DRAWER
+     -------------------------------------------------------------------------- */
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileNavDrawer = document.getElementById('mobileNavDrawer');
+
+  const closeMobileMenu = () => {
+    if (!mobileMenuBtn || !mobileNavDrawer) return;
+    mobileMenuBtn.setAttribute('aria-expanded', 'false');
+    mobileNavDrawer.hidden = true;
+  };
+
+  if (mobileMenuBtn && mobileNavDrawer) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+      mobileMenuBtn.setAttribute('aria-expanded', String(!isExpanded));
+      mobileNavDrawer.hidden = isExpanded;
+    });
+
+    mobileNavDrawer.querySelectorAll('a, button').forEach((el) => {
+      el.addEventListener('click', () => closeMobileMenu());
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024) closeMobileMenu();
+    });
+  }
 
   ['closeModalBtn', 'cancelModalBtn'].forEach((id) => {
     const btn = document.getElementById(id);

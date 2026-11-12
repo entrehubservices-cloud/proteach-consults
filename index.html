@@ -58,12 +58,51 @@
           </svg>
         </button>
 
-        <button type="button" class="btn btn-primary magnetic-btn" id="openModalBtn" data-cursor="BOOK">
+        <button type="button" class="btn btn-primary magnetic-btn header-book-btn" id="openModalBtn" data-cursor="BOOK">
           <span>Book Consultation</span>
           <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
+
+        <!-- Mobile & Tablet Hamburger Menu Button -->
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-expanded="false"
+          aria-controls="mobileNavDrawer"
+          aria-label="Open Navigation Menu"
+        >
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile & Tablet Slide-Down Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" hidden>
+      <div class="container mobile-nav-inner">
+        <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+          <a href="#about" class="mobile-nav-link">About Us</a>
+          <a href="#founder" class="mobile-nav-link">Principal Consultant (Zenab Adam)</a>
+          <a href="#services" class="mobile-nav-link">Our Services</a>
+          <a href="#process" class="mobile-nav-link">How It Works</a>
+          <a href="#gallery" class="mobile-nav-link">Events &amp; Media Gallery</a>
+          <a href="#testimonials" class="mobile-nav-link">Real Testimonials</a>
+          <a href="#faq" class="mobile-nav-link">FAQ &amp; Contact</a>
+        </nav>
+        <div class="mobile-nav-footer">
+          <button type="button" class="btn btn-primary btn-lg mobile-book-btn" id="mobileBookBtn">
+            <span>Book Free Consultation</span>
+            <span aria-hidden="true">→</span>
+          </button>
+          <a href="tel:+2349023838323" class="phone-pill mobile-phone-pill">
+            <span class="phone-icon">📞</span>
+            <span>0902 383 8323 · Fagge, Kano</span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
