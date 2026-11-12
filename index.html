@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="text-scale" content="scale" />
+  <title>Pro Teach Consults — Inform • Instruct • Inspire | Kano, Nigeria</title>
+  <meta name="description" content="Pro Teach Consults Limited (Kano, Nigeria) — Founded by Zenab Adam. School establishment, teacher training, M&amp;E audits, and The Art of Public Speaking &amp; Influencing (APSI)." />
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+
+  <!-- Clean Geometric Grotesque Font Family (Graphik / Inter / Plus Jakarta Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-track" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Custom Magnetic Cursor Ring -->
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true">
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+
+  <!-- STICKY NAVBAR (Behance NZUAC Pill Navigation Style) -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand-lockup" aria-label="Pro Teach Consults Home">
+        <img src="assets/images/logo-original.png" alt="Pro Teach Consults Logo" class="brand-logo-img" width="42" height="42" />
+        <div class="brand-text">
+          <span class="brand-name">Pro Teach Consults</span>
+          <span class="brand-motto">Inform • Instruct • Inspire</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link" data-nav="about">About Us</a>
+        <a href="#founder" class="nav-link" data-nav="founder">Principal Consultant</a>
+        <a href="#services" class="nav-link" data-nav="services">Services</a>
+        <a href="#process" class="nav-link" data-nav="process">How It Works</a>
+        <a href="#gallery" class="nav-link" data-nav="gallery">Gallery</a>
+        <a href="#testimonials" class="nav-link" data-nav="testimonials">Testimonials</a>
+        <a href="#faq" class="nav-link" data-nav="faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Light/Dark Mode" title="Switch Theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button type="button" class="btn btn-primary magnetic-btn" id="openModalBtn" data-cursor="BOOK">
+          <span>Book Consultation</span>
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 1. HERO SECTION (Video Background + 90% Dark Overlay + NZUAC 60/40 Asymmetric Grid) -->
+    <section class="hero-section hero-has-video">
+      <!-- Background Reel Video with 90% Opacity Dark Overlay -->
+      <div class="hero-video-bg" aria-hidden="true">
+        <video
+          id="heroBgVideo"
+          class="hero-bg-video"
+          autoplay
+          loop
+          muted
+          playsinline
+          poster="assets/images/hero_workshop.png"
+        >
+          <source src="assets/hero-reel.mp4" type="video/mp4" />
+          <source src="https://scontent.flos5-3.fna.fbcdn.net/o1/v/t2/f2/m366/AQOgmLmz8YkaTowMU6PP0_SXnZ9YFwRPlpZdzRixjGdCSEjcghNhs7zwHwT9qyijaeIReY76FQ_tSC6iOKVS-wpO5CH1T8gbdGoMlEtix4YhVA.mp4?_nc_cat=107&amp;_nc_oc=Ado6OJvSOsEEQH6PTUsQmbcasx0rymQSBSvn3pjaJF6dumLeMSqxcSA-ybRJG_4Z0k8&amp;_nc_sid=5e9851&amp;_nc_ht=scontent.flos5-3.fna.fbcdn.net&amp;_nc_ohc=s2mOHXTvCNcQ7kNvwFG3nfn&amp;efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuNzIwLmRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHAiLCJ4cHZfYXNzZXRfaWQiOjIwMDk3MDE4NjA0MTYwMzQsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDEyNCwiZHVyYXRpb25fcyI6NjAsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&amp;ccb=17-1&amp;vs=c141872bd3efe6cf&amp;_nc_vs=HBksFQIYRWZiX2VwaGVtZXJhbC8yQ0MwQURFODU2RkY0MUM4OEI4OTNFRUM4N0YwNUQyOF9tdF8xX3ZpZGVvX2Rhc2hpbml0Lm1wNBUAAsgBEgAVAhhAZmJfcGVybWFuZW50LzNFQUE2MzU1RUQ4QjRDNkRBRUQ3RDRGQjlFRDA5RjNGX2F1ZGlvX2Rhc2hpbml0Lm1wNBUCAsgBEgAoABgAGwKIB3VzZV9vaWwBMRJwcm9ncmVzc2l2ZV9yZWNpcGUBMRUAACbE6PTXhfSRBxUCKAJDMywXQE4AAAAAAAAYGWRhc2hfaDI2NC1iYXNpYy1nZW4yXzcyMHARAHUCZZieAQA&amp;_nc_gid=uyouG6Qtopr5VZI62iaNgQ&amp;_nc_ss=7a2a8&amp;_nc_map=urlgen_bucketless&amp;_nc_zt=28&amp;_nc_eui2=AeEZxc_QneB0-WLGeZJfG5IzPUjiyAQn7LY9SOLIBCfstqxFZg2555ElKkQV-nlFyRZ_AV_GGN4wDRQH5CtJ3O54&amp;oh=00_AQRolBGKnnqHnL0-41r0lnPKkSXw95wsC5Chmhpg4GAZyQ&amp;oe=6AFB947D&amp;bitrate=1137831&amp;tag=dash_h264-basic-gen2_720p" type="video/mp4" />
+          <source src="https://scontent.flos1-1.fna.fbcdn.net/o1/v/t2/f2/m412/AQPemr4Em879x_EI1wpQjPresd_XGyiH6YBt3vS7Y92Rdki1BBTrUpmzHRcHYM6ORStRtKwfVJYUJnaD_88paz5k0T7MJTnq6gG2UyZb8A.mp4?_nc_cat=102&amp;_nc_oc=AdrPFfSsI-ZKxbbGF8Anhr3Pbgxf7utXQEtCupsS7A_mkouU7EV3ExR-iRQPkC07AR8&amp;_nc_sid=8bf8fe&amp;_nc_ht=scontent.flos1-1.fna.fbcdn.net&amp;_nc_ohc=DKLIdP8uKCYQ7kNvwE-LuHP&amp;efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5GQUNFQk9PSy4uQzMuMzYwLnN2ZV9zZCIsInhwdl9hc3NldF9pZCI6MjAwOTcwMTg2MDQxNjAzNCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMTI0LCJkdXJhdGlvbl9zIjo2MCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&amp;ccb=17-1&amp;_nc_gid=uyouG6Qtopr5VZI62iaNgQ&amp;_nc_ss=7a2a8&amp;_nc_map=urlgen_bucketless&amp;_nc_zt=28&amp;_nc_eui2=AeE_zHeQ3vxsenVLAJjCZUPk1rl7Os7-BKrWuXs6zv4EqjGKAO_6iR1SyPHBpNoMkB8fLl_87DFfAzWmf2UF2vRF&amp;oh=00_AQRiqohVAEhH2bsVuFS-owDot59xmsZ3XUgxDDKRXkOjJw&amp;oe=6AFBB1E8&amp;bitrate=325979&amp;tag=sve_sd" type="video/mp4" />
+        </video>
+        <!-- 90% Opacity Dark Overlay -->
+        <div class="hero-video-overlay"></div>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy-col">
+          <div class="pill-badge pill-badge-hero reveal-up">
+            <span class="badge-star">★</span>
+            <span>A Premier Education &amp; Speaking Consultancy</span>
+          </div>
+
+          <h1 class="hero-title" data-split-text>
+            Building Exceptional <span class="text-accent">Schools, Educators</span> &amp; Confident Voices.
+          </h1>
+
+          <p class="hero-subtext reveal-up" style="--delay: 140ms">
+            We partner with schools and professionals across Kano and Abuja through turnkey school setup, staff training, and <strong>The Art of Public Speaking &amp; Influencing (APSI)</strong>.
+          </p>
+
+          <div class="hero-actions reveal-up" style="--delay: 220ms">
+            <button type="button" class="btn btn-primary btn-lg magnetic-btn" id="heroBookBtn" data-cursor="START">
+              <span>Get Free Consultation</span>
+              <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <a href="#founder" class="btn btn-ghost-light btn-lg magnetic-btn" data-cursor="FOUNDER">
+              <span>Meet Zenab Adam</span>
+            </a>
+            <a href="https://web.facebook.com/reel/1018112404252039" target="_blank" rel="noopener noreferrer" class="btn btn-reel-pill magnetic-btn" data-cursor="REEL" title="Watch Official Reel on Facebook">
+              <span class="reel-play-dot">▶</span>
+              <span>Watch Reel</span>
+            </a>
+          </div>
+
+          <!-- Compact Avatar Stack Social Proof -->
+          <div class="hero-trust-row reveal-up" style="--delay: 300ms">
+            <div class="avatar-stack" aria-hidden="true">
+              <span class="avatar-circle" style="background:#f37021">ZA</span>
+              <span class="avatar-circle" style="background:#1e1e1e">AB</span>
+              <span class="avatar-circle" style="background:#9f722c">JE</span>
+              <span class="avatar-circle" style="background:#3a3d45">23+</span>
+            </div>
+            <div class="trust-meta">
+              <div class="trust-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p>Trusted by <strong>1,500+ Educators &amp; APSI Alumni</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Column: Rounded Pill Frame + Floating Cards -->
+        <div class="hero-visual-col" id="heroParallaxStage">
+          <div class="hero-main-card curtain-reveal" data-cursor="APSI">
+            <div class="curtain-mask">
+              <img
+                src="assets/images/hero_workshop.png"
+                alt="Zenab Adam coaching at Pro Teach Consults APSI Workshop in Kano"
+                class="parallax-img"
+                fetchpriority="high"
+                width="640"
+                height="720"
+              />
+            </div>
+          </div>
+
+          <!-- Floating Badge 1: Brand Identity -->
+          <a href="#founder" class="float-badge float-top-left reveal-scale" style="--delay: 350ms">
+            <img src="assets/images/zenab_1.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam, Principal Consultant" width="44" height="44" style="object-fit:cover; height:44px;" />
+            <div>
+              <strong>Led by Zenab Adam (CVO)</strong>
+              <span>Edu Consultant &amp; TEDx Speaker</span>
+            </div>
+          </a>
+
+          <!-- Floating Badge 2: Verified Stat -->
+          <div class="float-badge float-bottom-right reveal-up" style="--delay: 440ms">
+            <div class="squircle-icon-sm">23+</div>
+            <div>
+              <strong>APSI Workshop Cohorts</strong>
+              <span>Kano &amp; Abuja Certified Alumni</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. PARTNER & SIGNATURE INITIATIVES STRIP -->
+    <section class="partner-strip" aria-label="Signature Programs & Institutional Reach">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>THE ART OF PUBLIC SPEAKING &amp; INFLUENCING (#APSI23)</span>
+          <span class="dot-sep">•</span>
+          <span>ZENAB ADAM — PRINCIPAL CONSULTANT &amp; TEDx SPEAKER</span>
+          <span class="dot-sep">•</span>
+          <span>APSI C.H.E.C.K. SUMMIT</span>
+          <span class="dot-sep">•</span>
+          <span>ANDAL SCIENCE ACADEMY PROJECT</span>
+          <span class="dot-sep">•</span>
+          <span>NEW PRIVATE SCHOOL SETUP</span>
+          <span class="dot-sep">•</span>
+          <span>TEACHER &amp; FRONT-DESK TRAINING</span>
+          <span class="dot-sep">•</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>THE ART OF PUBLIC SPEAKING &amp; INFLUENCING (#APSI23)</span>
+          <span class="dot-sep">•</span>
+          <span>ZENAB ADAM — PRINCIPAL CONSULTANT &amp; TEDx SPEAKER</span>
+          <span class="dot-sep">•</span>
+          <span>APSI C.H.E.C.K. SUMMIT</span>
+          <span class="dot-sep">•</span>
+          <span>ANDAL SCIENCE ACADEMY PROJECT</span>
+          <span class="dot-sep">•</span>
+          <span>NEW PRIVATE SCHOOL SETUP</span>
+          <span class="dot-sep">•</span>
+          <span>TEACHER &amp; FRONT-DESK TRAINING</span>
+          <span class="dot-sep">•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ABOUT US / WHY CHOOSE US (Behance NZUAC Multi-Photo Collage + 4 Checkmark Pills) -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <!-- Left Collage -->
+        <div class="about-collage">
+          <figure class="collage-card collage-primary curtain-reveal" data-cursor="ZOOM" data-gallery-open="0">
+            <div class="curtain-mask">
+              <img
+                src="assets/images/apsi_cohort_real.png"
+                alt="Pro Teach Consults APSI Graduates and Official Banner in Kano"
+                loading="lazy"
+                width="560"
+                height="410"
+              />
+            </div>
+          </figure>
+          <figure class="collage-card collage-secondary curtain-reveal" data-cursor="ZOOM" data-gallery-open="2">
+            <div class="curtain-mask">
+              <img
+                src="assets/images/school_consulting.png"
+                alt="School Consulting and Teacher Training in Kano"
+                loading="lazy"
+                width="360"
+                height="280"
+              />
+            </div>
+          </figure>
+          <div class="experience-pill reveal-scale">
+            <strong>Est. 2018</strong>
+            <span>61 Maganda Rd, Fagge, Kano</span>
+          </div>
+        </div>
+
+        <!-- Right Concise Copy -->
+        <div class="about-copy">
+          <div class="pill-badge reveal-up">About Pro Teach Consults</div>
+          <h2 class="section-title" data-split-text>
+            We Inform, Instruct &amp; <span class="text-accent">Inspire Excellence</span>.
+          </h2>
+          <p class="section-desc reveal-up">
+            Based at <strong>61 Maganda Road, Fagge, Kano</strong>, Pro Teach Consults Limited partners with private schools and ambitious professionals to build world-class classrooms and confident communicators.
+          </p>
+
+          <div class="feature-check-grid reveal-up" style="--delay: 120ms">
+            <div class="check-card">
+              <span class="check-box">✓</span>
+              <div>
+                <strong>School Setup &amp; Advisory</strong>
+                <span>Andal Science &amp; Fayas Prep</span>
+              </div>
+            </div>
+            <div class="check-card">
+              <span class="check-box">✓</span>
+              <div>
+                <strong>Whole-School Training</strong>
+                <span>Teachers, assistants &amp; admin</span>
+              </div>
+            </div>
+            <div class="check-card">
+              <span class="check-box">✓</span>
+              <div>
+                <strong>23+ APSI Workshops</strong>
+                <span>Public speaking &amp; influence</span>
+              </div>
+            </div>
+            <div class="check-card">
+              <span class="check-box">✓</span>
+              <div>
+                <strong>M&amp;E Quality Audits</strong>
+                <span>Termly school evaluations</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cta-row reveal-up" style="--delay: 200ms">
+            <button type="button" class="btn btn-primary magnetic-btn" data-service-select="School Establishment & M&E">
+              <span>Work With Us</span>
+            </button>
+            <a href="tel:+2349023838323" class="phone-pill" aria-label="Call 0902 383 8323">
+              <span class="phone-icon">☎</span>
+              <span>0902 383 8323</span>
+            </a>
+            <div class="social-icon-row" aria-label="Social Media Profiles">
+              <a href="https://web.facebook.com/proteachconsults" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/proteach_consults/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="https://ng.linkedin.com/in/zenab-adam-03809795" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/2349037205097" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp" title="WhatsApp">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3B. DEDICATED SEGMENT FOR PRINCIPAL CONSULTANT ZENAB ADAM (Behance NZUAC Editorial Showcase) -->
+    <section class="section founder-section" id="founder">
+      <div class="container founder-grid">
+        <!-- Left: Interactive 3-Portrait Editorial Gallery of Zenab Adam -->
+        <div class="founder-portraits-col reveal-up">
+          <div class="founder-main-frame curtain-reveal" id="founderMainFrame" data-cursor="VIEW" data-gallery-open="5">
+            <div class="curtain-mask">
+              <img
+                src="assets/images/zenab_1.jpg"
+                onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';"
+                alt="Zenab Adam — Principal Consultant &amp; Founder, Pro Teach Consults"
+                id="founderFeaturedImg"
+                width="520"
+                height="620"
+              />
+            </div>
+            <div class="founder-frame-caption">
+              <span class="founder-badge-tag">Principal Consultant &amp; CVO</span>
+              <strong id="founderCaptionTitle">Zenab Adam — Studio Portrait</strong>
+            </div>
+          </div>
+
+          <!-- 3 Portrait Switcher Thumbnails -->
+          <div class="founder-thumb-strip" role="tablist" aria-label="Zenab Adam Portraits">
+            <button
+              type="button"
+              class="founder-thumb-btn is-active"
+              data-portrait-src="assets/images/zenab_1.jpg"
+              data-portrait-fallback="assets/images/zenab_adam_portrait.png"
+              data-portrait-caption="Zenab Adam — Principal Consultant &amp; Founder"
+              data-gallery-idx="5"
+              aria-label="View Portrait 1 of Zenab Adam"
+            >
+              <img src="assets/images/zenab_1.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam Portrait 1" />
+            </button>
+            <button
+              type="button"
+              class="founder-thumb-btn"
+              data-portrait-src="assets/images/zenab_2.jpg"
+              data-portrait-fallback="assets/images/zenab_adam_portrait.png"
+              data-portrait-caption="Zenab Adam — Integrative Life &amp; Communications Coach"
+              data-gallery-idx="6"
+              aria-label="View Portrait 2 of Zenab Adam"
+            >
+              <img src="assets/images/zenab_2.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam Portrait 2" />
+            </button>
+            <button
+              type="button"
+              class="founder-thumb-btn"
+              data-portrait-src="assets/images/zenab_3.jpg"
+              data-portrait-fallback="assets/images/zenab_adam_portrait.png"
+              data-portrait-caption="Zenab Adam — TEDx Speaker &amp; APSI Convener"
+              data-gallery-idx="7"
+              aria-label="View Portrait 3 of Zenab Adam"
+            >
+              <img src="assets/images/zenab_3.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam Portrait 3" />
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Concise Executive Credentials & Impact -->
+        <div class="founder-copy-col">
+          <div class="pill-badge reveal-up">Meet The Principal Consultant</div>
+          <h2 class="section-title" data-split-text>
+            Zenab <span class="text-accent">Adam</span>
+          </h2>
+          <p class="founder-role-line reveal-up">
+            Edu Consultant <span>|</span> Life Coach <span>|</span> Trainer &amp; Communications Coach <span>|</span> TEDx Speaker <span>|</span> Founder, Pro Teach Consults
+          </p>
+
+          <blockquote class="founder-quote-box reveal-up" style="--delay: 80ms">
+            “When we equip a teacher with clarity and a leader with a fearless voice, we transform entire classrooms and communities. It’s only impossible if you say it is.”
+          </blockquote>
+
+          <p class="section-desc reveal-up" style="--delay: 120ms">
+            A seasoned educational strategist and former Principal at <strong>Highflyers Academy Kano</strong>, Zenab Adam leads turnkey school establishments for institutions including <strong>Andal Science Academy Kano</strong> and <strong>Fayas Preparatory School Maiduguri</strong>, while coaching executives through <strong>23+ cohorts of APSI</strong>.
+          </p>
+
+          <!-- Credential Highlights Grid -->
+          <div class="founder-credentials-grid reveal-up" style="--delay: 160ms">
+            <div class="cred-pill-card">
+              <span class="cred-icon">🎤</span>
+              <div>
+                <strong>TEDx Speaker</strong>
+                <span>“Redefining Cool” · TEDxIntercontinental Schools Kano</span>
+              </div>
+            </div>
+            <div class="cred-pill-card">
+              <span class="cred-icon">🏛️</span>
+              <div>
+                <strong>Institutional Consultant</strong>
+                <span>Andal Science Academy &amp; Fayas Preparatory School</span>
+              </div>
+            </div>
+            <div class="cred-pill-card">
+              <span class="cred-icon">✨</span>
+              <div>
+                <strong>APSI &amp; C.H.E.C.K. Convener</strong>
+                <span>23+ Public Speaking Editions across Kano &amp; Abuja</span>
+              </div>
+            </div>
+            <div class="cred-pill-card">
+              <span class="cred-icon">🧭</span>
+              <div>
+                <strong>Integrative Life Coach</strong>
+                <span>Executive mindset, healing &amp; leadership communication</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="founder-actions-row reveal-up" style="--delay: 220ms">
+            <button type="button" class="btn btn-primary magnetic-btn" data-service-select="APSI Public Speaking Workshop" data-cursor="BOOK">
+              <span>Book Zenab for Training / Speaking</span>
+            </button>
+            <div class="social-icon-row" aria-label="Zenab Adam Social Links">
+              <a href="https://ng.linkedin.com/in/zenab-adam-03809795" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Zenab Adam on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/zenaba.adam/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Zenab Adam on Instagram" title="Instagram (@zenaba.adam)">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="https://x.com/zenabaadam" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Zenab Adam on X" title="X (@zenabaadam)">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+              <a href="https://web.facebook.com/ahlaminaa" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Zenab Adam on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES SECTION (NZUAC 3-Column Card Grid with Dark Squircle Icons & Short 20-Word Copy) -->
+    <section class="section section-cultured" id="services">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge reveal-up">Our Core Services</div>
+          <h2 class="section-title" data-split-text>
+            Tailored Solutions for <span class="text-accent">Schools &amp; Leaders</span>
+          </h2>
+          <p class="section-desc reveal-up">
+            Focused programs designed to upgrade academic quality, staff hospitality, and executive communication.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <article class="service-card reveal-up" data-spotlight>
+            <div class="squircle-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1M14 9h1M9 13h1M14 13h1M10 21v-4h4v4"/>
+              </svg>
+            </div>
+            <h3>New School Establishment</h3>
+            <p>Complete blueprint, academic policies, curriculum architecture, and founding staff recruitment for new private schools.</p>
+            <button type="button" class="card-link-btn" data-service-select="School Establishment & M&E">
+              <span>Book Consultation</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="service-card reveal-up" style="--delay: 80ms" data-spotlight>
+            <div class="squircle-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11l3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+              </svg>
+            </div>
+            <h3>Monitoring &amp; Evaluation (M&amp;E)</h3>
+            <p>Termly classroom audits, lesson-note inspections, and teacher KPI scorecards for measurable quality assurance.</p>
+            <button type="button" class="card-link-btn" data-service-select="School Establishment & M&E">
+              <span>Request School Audit</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="service-card reveal-up" style="--delay: 160ms" data-spotlight>
+            <div class="squircle-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Teacher &amp; Front-Desk Training</h3>
+            <p>Active pedagogy for classroom and assistant teachers plus parent-communication etiquette for front-desk staff.</p>
+            <button type="button" class="card-link-btn" data-service-select="Staff & Teacher Training">
+              <span>Train Your Staff</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="service-card reveal-up" style="--delay: 200ms" data-spotlight>
+            <div class="squircle-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3zM19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"/>
+              </svg>
+            </div>
+            <h3>APSI Public Speaking Workshop</h3>
+            <p>Overcome stage fear, deliver brilliant speeches, master storytelling, and command online presentations.</p>
+            <button type="button" class="card-link-btn" data-service-select="APSI Public Speaking Workshop">
+              <span>Join #APSI23+ Cohort</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="service-card reveal-up" style="--delay: 260ms" data-spotlight>
+            <div class="squircle-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>APSI C.H.E.C.K. Summit</h3>
+            <p>Annual conference uniting top coaches and speakers on Coaching, Healing, Effective Communication &amp; Knowledge.</p>
+            <button type="button" class="card-link-btn" data-service-select="APSI C.H.E.C.K. Summit">
+              <span>Reserve Summit Pass</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="service-card reveal-up" style="--delay: 320ms" data-spotlight>
+            <div class="squircle-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h3>Educational Resource Supply</h3>
+            <p>Curated Montessori materials, early-years sensory kits, and modern instructional aids for Kano schools.</p>
+            <button type="button" class="card-link-btn" data-service-select="Educational Resource Supply">
+              <span>Order School Aids</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FULL-WIDTH DARK STATS COUNTER BAR (NZUAC Raisin Black Bar) -->
+    <section class="stats-bar-section" aria-label="Impact Statistics">
+      <div class="container stats-bar-grid">
+        <div class="stat-box reveal-up">
+          <span class="stat-number"><span class="counter" data-target="23">0</span>+</span>
+          <span class="stat-label">APSI Workshop Editions</span>
+        </div>
+        <div class="stat-box reveal-up" style="--delay: 80ms">
+          <span class="stat-number"><span class="counter" data-target="1500">0</span>+</span>
+          <span class="stat-label">Educators &amp; Speakers Trained</span>
+        </div>
+        <div class="stat-box reveal-up" style="--delay: 160ms">
+          <span class="stat-number"><span class="counter" data-target="50">0</span>+</span>
+          <span class="stat-label">Partner Schools &amp; Clients</span>
+        </div>
+        <div class="stat-box reveal-up" style="--delay: 240ms">
+          <span class="stat-number"><span class="counter" data-target="98">0</span>%</span>
+          <span class="stat-label">Participant Satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. HOW IT WORKS / 4-STEP PROCESS (NZUAC 4-Step Sequence) -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge reveal-up">How It Works</div>
+          <h2 class="section-title" data-split-text>
+            Four Simple Steps to <span class="text-accent">Transformation</span>
+          </h2>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card reveal-up">
+            <span class="process-num">01</span>
+            <h3>Diagnostic Profiling</h3>
+            <p>We assess your school’s academic structure or your personal speaking goals.</p>
+          </div>
+          <div class="process-card reveal-up" style="--delay: 80ms">
+            <span class="process-num">02</span>
+            <h3>Custom Action Plan</h3>
+            <p>We design a tailored curriculum, M&amp;E rubric, or APSI training roadmap.</p>
+          </div>
+          <div class="process-card reveal-up" style="--delay: 160ms">
+            <span class="process-num">03</span>
+            <h3>Hands-On Immersion</h3>
+            <p>Interactive workshops, live speech delivery drills, and staff roleplay.</p>
+          </div>
+          <div class="process-card reveal-up" style="--delay: 240ms">
+            <span class="process-num">04</span>
+            <h3>Virtual Mentorship</h3>
+            <p>Ongoing post-workshop mentorship and termly quality assurance visits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. INTERACTIVE GALLERY WINDOW (Studio Window Frame + Category Tabs + Lightbox Viewer) -->
+    <section class="section section-cultured gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="pill-badge reveal-up">Events &amp; Media Window</div>
+          <h2 class="section-title" data-split-text>
+            Inside <span class="text-accent">#TheAPSIExperience</span> &amp; Leadership
+          </h2>
+          <p class="section-desc reveal-up">
+            Click any frame inside the gallery window to inspect our workshops, Principal Consultant portraits, and summits in full view.
+          </p>
+        </div>
+
+        <!-- Interactive OS/Browser Gallery Window Container -->
+        <div class="gallery-window reveal-up">
+          <!-- Window Top Bar -->
+          <div class="window-titlebar">
+            <div class="window-dots" aria-hidden="true">
+              <span class="w-dot dot-red"></span>
+              <span class="w-dot dot-amber"></span>
+              <span class="w-dot dot-green"></span>
+            </div>
+            <div class="window-address-pill">
+              <span>proteachconsults.kano / media-gallery</span>
+            </div>
+            <div class="window-filter-tabs" role="tablist" aria-label="Filter Gallery">
+              <button type="button" class="gallery-filter-btn active" data-filter="all">All (8)</button>
+              <button type="button" class="gallery-filter-btn" data-filter="founder">Zenab Adam</button>
+              <button type="button" class="gallery-filter-btn" data-filter="apsi">APSI Cohorts</button>
+              <button type="button" class="gallery-filter-btn" data-filter="schools">Schools &amp; M&amp;E</button>
+              <button type="button" class="gallery-filter-btn" data-filter="summit">C.H.E.C.K. Summit</button>
+            </div>
+          </div>
+
+          <!-- Window Body Grid -->
+          <div class="window-gallery-grid" id="galleryGrid">
+            <!-- Item 0: Real Facebook APSI Cohort & Banner -->
+            <figure class="gallery-item gallery-item-featured" data-category="apsi" data-index="0" tabindex="0" role="button" aria-label="Open Official APSI Cohort & Banner photo">
+              <img src="assets/images/apsi_cohort_real.png" alt="Zenab Adam and certified APSI Workshop graduates with official roll-up banner in Kano" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">Official Cohort · Kano</span>
+                <h4>APSI Workshop Graduates &amp; Roll-Up Banner</h4>
+                <p>Zenab Adam with certified alumni holding completion certificates.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 1: Executive Speaking Session -->
+            <figure class="gallery-item" data-category="apsi" data-index="1" tabindex="0" role="button" aria-label="Open Executive Speaking Workshop photo">
+              <img src="assets/images/hero_workshop.png" alt="Live speech delivery and vocal coaching at APSI Workshop" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">#APSI23 Intensive</span>
+                <h4>Stage Confidence &amp; Vocal Coaching</h4>
+                <p>Overcoming stage fright and delivering brilliant speeches.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 2: School Consulting -->
+            <figure class="gallery-item" data-category="schools" data-index="2" tabindex="0" role="button" aria-label="Open School Quality Audit photo">
+              <img src="assets/images/school_consulting.png" alt="Teacher capacity building and curriculum review inside a Kano classroom" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">School Setup &amp; M&amp;E</span>
+                <h4>Teacher &amp; Curriculum Mentorship</h4>
+                <p>Hands-on capacity building for private schools in Kano.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 3: APSI CHECK Summit -->
+            <figure class="gallery-item" data-category="summit" data-index="3" tabindex="0" role="button" aria-label="Open APSI C.H.E.C.K. Summit photo">
+              <img src="assets/images/check_summit.png" alt="APSI C.H.E.C.K. Summit panel stage with speakers in Kano" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">Annual Convocation</span>
+                <h4>APSI C.H.E.C.K. Summit</h4>
+                <p>Featuring Dr. Lanre Olusola, Zenab Adam &amp; 9+ leaders.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 4: Official Brand Monogram -->
+            <figure class="gallery-item" data-category="schools" data-index="4" tabindex="0" role="button" aria-label="Open Pro Teach Consults Brand Identity">
+              <img src="assets/images/logo-original.png" alt="Pro Teach Consults Official Brand Mark" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">Brand Identity</span>
+                <h4>Inform • Instruct • Inspire</h4>
+                <p>61 Maganda Road, Fagge, Kano State.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 5: Zenab Adam Portrait 1 -->
+            <figure class="gallery-item" data-category="founder" data-index="5" tabindex="0" role="button" aria-label="Open Zenab Adam Principal Consultant Portrait 1">
+              <img src="assets/images/zenab_1.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam — Principal Consultant &amp; Founder, Pro Teach Consults" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">Principal Consultant</span>
+                <h4>Zenab Adam — Founder &amp; CVO</h4>
+                <p>Edu Consultant, Life Coach &amp; TEDx Speaker.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 6: Zenab Adam Portrait 2 -->
+            <figure class="gallery-item" data-category="founder" data-index="6" tabindex="0" role="button" aria-label="Open Zenab Adam Communications Coach Portrait 2">
+              <img src="assets/images/zenab_2.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam — Trainer &amp; Communications Coach" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">Executive Coaching</span>
+                <h4>Zenab Adam — Communications Coach</h4>
+                <p>Empowering educators and public speakers across Nigeria.</p>
+              </figcaption>
+            </figure>
+
+            <!-- Item 7: Zenab Adam Portrait 3 -->
+            <figure class="gallery-item" data-category="founder" data-index="7" tabindex="0" role="button" aria-label="Open Zenab Adam TEDx Speaker Portrait 3">
+              <img src="assets/images/zenab_3.jpg" onerror="this.onerror=null;this.src='assets/images/zenab_adam_portrait.png';" alt="Zenab Adam — TEDx Speaker &amp; Educational Strategist" loading="lazy" />
+              <figcaption class="gallery-overlay">
+                <span class="gallery-tag">TEDx Speaker</span>
+                <h4>Zenab Adam — Leadership &amp; Vision</h4>
+                <p>Convener of 23+ APSI Workshop cohorts in Kano &amp; Abuja.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. ANIMATED SLIDING TESTIMONIALS CAROUSEL SECTION -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header-split">
+          <div>
+            <div class="pill-badge reveal-up">Real Testimonials</div>
+            <h2 class="section-title" data-split-text>
+              Voices From Our <span class="text-accent">Kano &amp; APSI Community</span>
+            </h2>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="testimonial-header-controls reveal-up">
+            <div class="slider-nav-buttons" aria-label="Testimonial Slider Controls">
+              <button type="button" class="slider-arrow-btn" id="prevTestimonialBtn" aria-label="Previous Testimonial">←</button>
+              <button type="button" class="slider-arrow-btn" id="nextTestimonialBtn" aria-label="Next Testimonial">→</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Horizontal Sliding Carousel Viewport -->
+        <div class="testimonial-slider-viewport reveal-up" id="testimonialSliderViewport" aria-roledescription="carousel" aria-label="Client and Alumni Testimonials">
+          <div class="testimonial-slider-track" id="testimonialSliderTrack">
+            <!-- Slide 1: Aliyu Bello -->
+            <article class="testimonial-card testimonial-slide" data-spotlight>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                “In APSI, you learn Public Speaking tricks, you relax, you get informed, you get motivated, you get inspired, and you eat gooooood food! Truly an unforgettable workshop experience.”
+              </blockquote>
+              <div class="reviewer-footer">
+                <div class="reviewer-avatar" style="background:#f37021">AB</div>
+                <div>
+                  <strong class="reviewer-name">Aliyu Bello (#Gadanga)</strong>
+                  <span class="reviewer-role">APSI Workshop Graduate · Kano</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 2: Joy Eshimhokhai -->
+            <article class="testimonial-card testimonial-slide" data-spotlight>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                “Pro Teach Consults and the APSI C.H.E.C.K. Summit have created an extraordinary ecosystem for coaching, healing, and effective communication across Northern Nigeria.”
+              </blockquote>
+              <div class="reviewer-footer">
+                <div class="reviewer-avatar" style="background:#1e1e1e">JE</div>
+                <div>
+                  <strong class="reviewer-name">Joy Eshimhokhai</strong>
+                  <span class="reviewer-role">Educator &amp; APSI C.H.E.C.K. Summit Speaker</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 3: APSI Cohort Alumni -->
+            <article class="testimonial-card testimonial-slide" data-spotlight>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                “Attended The Art of Public Speaking and Influencing (APSI) by Pro Teach Consults. Oh my goodness, the experience was out of this world—a non-stop learning curve that pinpointed our true strengths!”
+              </blockquote>
+              <div class="reviewer-footer">
+                <div class="reviewer-avatar" style="background:#9f722c">YS</div>
+                <div>
+                  <strong class="reviewer-name">Yusuf Salisu Funtua</strong>
+                  <span class="reviewer-role">Communications Coach &amp; APSI Alumni · Kano</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 4: 23rd Edition Reawakening -->
+            <article class="testimonial-card testimonial-slide" data-spotlight>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                “APSI Workshop was truly a reawakening! We came, we saw, and we conquered the fear of public speaking. APSI is indeed a gift that keeps on giving across Kano and Abuja.”
+              </blockquote>
+              <div class="reviewer-footer">
+                <div class="reviewer-avatar" style="background:#6b1724">HG</div>
+                <div>
+                  <strong class="reviewer-name">Hadiza Gumel-Junaidu</strong>
+                  <span class="reviewer-role">Educational Leader &amp; Summit Panelist</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 5: Andal Science Academy Project -->
+            <article class="testimonial-card testimonial-slide" data-spotlight>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                “Building school capacity, classroom standards, and teacher empowerment from the ground up with Zenab Adam proved one thing: it’s only impossible if you say it is.”
+              </blockquote>
+              <div class="reviewer-footer">
+                <div class="reviewer-avatar" style="background:#f37021">AS</div>
+                <div>
+                  <strong class="reviewer-name">Andal Science Academy Project</strong>
+                  <span class="reviewer-role">Institutional School Setup &amp; M&amp;E Partner · Kano</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Slide 6: Salihu Salihu Tijjani -->
+            <article class="testimonial-card testimonial-slide" data-spotlight>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <blockquote class="review-quote">
+                “From storytelling and body language to post-workshop virtual mentorship, Zenab Adam’s coaching transforms shy professionals into commanding speakers.”
+              </blockquote>
+              <div class="reviewer-footer">
+                <div class="reviewer-avatar" style="background:#1e1e1e">ST</div>
+                <div>
+                  <strong class="reviewer-name">Salihu Salihu Tijjani</strong>
+                  <span class="reviewer-role">Speaker &amp; #TheAPSIExperience Facilitator</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Carousel Pagination Dots & Auto-Play Status -->
+        <div class="testimonial-slider-footer">
+          <div class="slider-dots" id="testimonialDots" role="tablist" aria-label="Choose testimonial slide"></div>
+          <span class="slider-autoplay-hint">Auto-sliding • Hover to pause</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONCISE FAQ ACCORDION SECTION -->
+    <section class="section section-cultured faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-left">
+          <div class="pill-badge reveal-up">FAQ</div>
+          <h2 class="section-title" data-split-text>
+            Quick Answers to <span class="text-accent">Common Questions</span>
+          </h2>
+          <p class="section-desc reveal-up">
+            Visit us at <strong>61 Maganda Rd, Fagge, Kano</strong> (Mon–Sat, 10:00 AM) or call directly.
+          </p>
+          <div class="direct-contact-card reveal-up">
+            <strong>Direct Kano Desk</strong>
+            <p><a href="tel:+2349023838323">0902 383 8323</a> · <a href="tel:+2349037205097">0903 720 5097</a></p>
+            <span>proteachconsults@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="faq-right reveal-up">
+          <details class="modern-accordion" name="proteach-faq" open>
+            <summary class="accordion-trigger">
+              <span>What are the 5 modules of the APSI Workshop?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>Overcome Your Fears, Prepare &amp; Deliver Brilliant Speeches, Use Storytelling &amp; Body Language Effectively, Master Online Presentations, and Post-Workshop Virtual Mentorship.</p>
+            </div>
+          </details>
+
+          <details class="modern-accordion" name="proteach-faq">
+            <summary class="accordion-trigger">
+              <span>Do you set up new private schools in Kano from scratch?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>Yes—we provide policies, Early Years/Primary/Secondary curricula, teacher recruitment grading, classroom setup, and founding staff training.</p>
+            </div>
+          </details>
+
+          <details class="modern-accordion" name="proteach-faq">
+            <summary class="accordion-trigger">
+              <span>Can you train our teachers and front-desk staff on-site?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>Yes, we deliver customized in-house trainings at your school premises across Kano and Abuja for teachers, assistants, and receptionists.</p>
+            </div>
+          </details>
+
+          <details class="modern-accordion" name="proteach-faq">
+            <summary class="accordion-trigger">
+              <span>Where is your office located in Kano?</span>
+              <span class="accordion-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="accordion-content">
+              <p>We are at 61 Maganda Road, Off MM Way, Fagge, Kano 700282 (Open Monday–Saturday from 10:00 AM).</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. HIGH-CONTRAST DARK CTA BANNER (NZUAC Raisin Black Banner with Geometric Accents) -->
+    <section class="cta-banner-section" id="contact">
+      <div class="container">
+        <div class="cta-banner-box reveal-up">
+          <div class="cta-banner-copy">
+            <div class="pill-badge pill-badge-dark">Ready to Begin?</div>
+            <h2 data-split-text>Transform Your School or Public Speaking Confidence Today.</h2>
+            <p>Book a consultation at 61 Maganda Rd, Fagge, Kano or reserve your seat in the next APSI cohort.</p>
+          </div>
+          <div class="cta-banner-actions">
+            <button type="button" class="btn btn-primary btn-lg magnetic-btn" id="ctaBannerBookBtn" data-cursor="BOOK">
+              <span>Schedule Your Session Now</span>
+              <svg viewBox="0 0 20 20" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 10h10M11 6l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <a href="tel:+2349023838323" class="btn btn-ghost-light btn-lg">Call 0902 383 8323</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 11. CLEAN 4-COLUMN FOOTER (Behance NZUAC Footer Structure) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col-brand">
+          <div class="footer-logo-row">
+            <img src="assets/images/logo-original.png" alt="Pro Teach Consults Logo" width="48" height="48" />
+            <div>
+              <strong>Pro Teach Consults Ltd</strong>
+              <span>Inform • Instruct • Inspire</span>
+            </div>
+          </div>
+          <p>Premier educational consultancy, school capacity building, and public speaking academy in Kano, Nigeria.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#founder">Principal Consultant</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery Window</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Programs</h4>
+          <ul>
+            <li><a href="#services">New School Setup</a></li>
+            <li><a href="#services">M&amp;E Quality Audits</a></li>
+            <li><a href="#services">Teacher &amp; Admin Training</a></li>
+            <li><a href="#services">APSI Speaking Workshop</a></li>
+            <li><a href="#services">APSI C.H.E.C.K. Summit</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Kano Office</h4>
+          <address>
+            61 Maganda Rd, Fagge, Kano<br />
+            <a href="tel:+2349023838323">0902 383 8323</a> · <a href="tel:+2349037205097">0903 720 5097</a><br />
+            <a href="mailto:proteachconsults@gmail.com">proteachconsults@gmail.com</a>
+          </address>
+          <div class="footer-socials" aria-label="Pro Teach Consults Social Media">
+            <a href="https://web.facebook.com/proteachconsults" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-dark" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/proteach_consults/" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-dark" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://ng.linkedin.com/in/zenab-adam-03809795" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-dark" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://x.com/zenabaadam" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-dark" aria-label="X (Twitter)" title="X (Twitter)">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/2349037205097" target="_blank" rel="noopener noreferrer" class="social-icon-btn social-icon-dark" aria-label="WhatsApp" title="WhatsApp">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Pro Teach Consults Limited. All rights reserved.</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE GALLERY LIGHTBOX WINDOW (<dialog closedby="any">) -->
+  <dialog class="gallery-lightbox" id="galleryLightbox" closedby="any" aria-label="Gallery Media Viewer">
+    <div class="lightbox-window">
+      <div class="lightbox-topbar">
+        <div class="window-dots" aria-hidden="true">
+          <span class="w-dot dot-red"></span>
+          <span class="w-dot dot-amber"></span>
+          <span class="w-dot dot-green"></span>
+        </div>
+        <span class="lightbox-counter" id="lightboxCounter">1 / 8</span>
+        <button type="button" class="lightbox-close-btn" id="closeLightboxBtn" aria-label="Close Gallery Window">✕</button>
+      </div>
+      <div class="lightbox-stage">
+        <button type="button" class="lightbox-nav prev" id="lightboxPrevBtn" aria-label="Previous image">←</button>
+        <figure class="lightbox-figure">
+          <img src="assets/images/apsi_cohort_real.png" alt="" id="lightboxImg" />
+          <figcaption class="lightbox-caption">
+            <span id="lightboxTag" class="gallery-tag">Official Cohort</span>
+            <h3 id="lightboxTitle">APSI Workshop Graduates</h3>
+            <p id="lightboxDesc">Zenab Adam with certified alumni.</p>
+          </figcaption>
+        </figure>
+        <button type="button" class="lightbox-nav next" id="lightboxNextBtn" aria-label="Next image">→</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- CONSULTATION BOOKING MODAL (<dialog closedby="any">) -->
+  <dialog class="consult-dialog" id="consultDialog" closedby="any" aria-labelledby="dialogTitle">
+    <div class="dialog-inner">
+      <div class="dialog-header">
+        <div class="dialog-brand-badge">
+          <img src="assets/images/logo-original.png" alt="" width="40" height="40" />
+          <div>
+            <span class="dialog-eyebrow">Inform • Instruct • Inspire</span>
+            <h2 id="dialogTitle">Book Your Consultation</h2>
+          </div>
+        </div>
+        <button type="button" class="dialog-close-btn" id="closeModalBtn" aria-label="Close modal">✕</button>
+      </div>
+
+      <form class="dialog-form" id="modalConsultForm" method="dialog">
+        <div class="form-row-2">
+          <div class="form-field">
+            <label for="modalName">Full Name <span class="req">*</span></label>
+            <input type="text" id="modalName" name="name" required autocomplete="name" placeholder="Your full name" />
+            <span class="field-error">Please enter your name.</span>
+          </div>
+          <div class="form-field">
+            <label for="modalPhone">Phone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="modalPhone" name="phone" required autocomplete="tel" placeholder="0902 383 8323" />
+            <span class="field-error">Please enter a valid phone number.</span>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="modalService">Service Track <span class="req">*</span></label>
+          <select id="modalService" name="service" required>
+            <option value="School Establishment & M&E">New School Setup &amp; M&amp;E Audit</option>
+            <option value="Staff & Teacher Training">Teacher, Assistant &amp; Front-Desk Training</option>
+            <option value="APSI Public Speaking Workshop">APSI Public Speaking Workshop</option>
+            <option value="APSI C.H.E.C.K. Summit">APSI C.H.E.C.K. Summit</option>
+            <option value="Educational Resource Supply">Educational Resource Supply</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="modalNotes">Brief Note (Optional)</label>
+          <textarea id="modalNotes" name="notes" rows="2" placeholder="Preferred date or school name..."></textarea>
+        </div>
+
+        <div class="dialog-footer">
+          <button type="button" class="btn btn-outline" id="cancelModalBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Confirm Request</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Toast Notification Banner -->
+  <div class="toast-banner" id="toastBanner" role="status" aria-live="polite" hidden></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

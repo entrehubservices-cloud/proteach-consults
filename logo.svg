@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none" aria-labelledby="ptc-logo-title">
+  <title id="ptc-logo-title">Pro Teach Consults Logo</title>
+  <!-- Grey vertical stem with left top overhang -->
+  <path d="M74 36H118V118H90V47H74V36Z" fill="#727477"/>
+  <!-- Signature Orange Loop (P bowl with tapered inner crescent hooks) -->
+  <path d="M100 58C100 43.5 110 36 124 36H148C163.5 36 172 44.5 172 60V78C172 93.5 163.5 102 148 102H116C105 102 99 95.5 99 84C101.5 90 107.5 91.5 116 91.5H146C155.5 91.5 160.5 86.5 160.5 77V61C160.5 51.5 155.5 46.5 146 46.5H122C110 46.5 103 50.5 100 58Z" fill="#F37021"/>
+  <!-- PRO TEACH -->
+  <text x="120" y="148" text-anchor="middle" fill="#D5D7DA" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="800" font-size="25" letter-spacing="1.2">PRO TEACH</text>
+  <!-- CONSULTS -->
+  <text x="122" y="169" text-anchor="middle" fill="#7D8084" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="400" font-size="14" letter-spacing="7.5">CONSULTS</text>
+</svg>
